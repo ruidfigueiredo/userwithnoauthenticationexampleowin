@@ -28,7 +28,7 @@ namespace UserDefinedInWebConfigOwin
                 ClaimsPrincipal principal = new ClaimsPrincipal(identity);
 
                 //HttpContext.Current.User = principal; //this will work as well if you are hosting in IIS, 
-                                                        //but if you are using owin, might as well use the owin 
+                                                        //but if you are using owin, might as well use the owin way
                                                         //to set the principal
 
                 owinContext.Authentication.User = principal;
